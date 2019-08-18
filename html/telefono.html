@@ -1,0 +1,26 @@
+<html>
+<body>
+<script type="text/javascript">
+ (function (window) {
+     {
+         var unknown = '-';
+
+         var nVer = navigator.appVersion;
+
+         var mobile = /Mobile|mini|Fennec|Android|iP(ad|od|hone)/.test(nVer);
+         if (mobile == true)
+         {
+           alert("attivare modalita desktop");
+         }
+else
+{
+  alert("pc");
+}
+     }
+     window.jscd = {
+         mobile: mobile,
+     };
+ }(this));
+</script>
+</body>
+</html>
