@@ -2,7 +2,7 @@ import socket
 import requests
 import uuid
 import platform
-ip = requests.get("https://ip.42.pl/anything%20.")
+ip = requests.get("https://api.myip.com")
 print ("il tuo ip pubblico ==> " + ip.text)
 hostname = socket.gethostname()    
 IPAddr = socket.gethostbyname(hostname)    
