@@ -37,10 +37,10 @@ if scelta == "1":
             if sceltaVformato=="png":
                 print("nome immagine modificata")
                 img.save(input()+".png")#salvo l'immagine
-                root = tkinter.Tk()
+                root = tkinter.Tk() #apro la finestra di tkinter
                 root.withdraw()
                 tkinter.messagebox.showinfo("png", "successo")
-                root.destroy()
+                root.destroy() #distruggo la finestra di tkinter
             if sceltaVformato=="jpg":
                 print("nome immagine modificata")
                 root = tkinter.Tk()
@@ -56,8 +56,8 @@ if scelta == "1":
 
 else:
     def calcolatore(filename):
-        sha1 = hashlib.sha1()
-        md5 = hashlib.md5()
+        sha1 = hashlib.sha1() #funzione per calcolare sha1
+        md5 = hashlib.md5() #funzione per calcolare md5
         with open(filename, "rb") as thefile:
              buf = thefile.read()
              md5.update(buf)
